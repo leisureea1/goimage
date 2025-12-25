@@ -1,0 +1,24 @@
+# 图床系统配置文件
+
+server:
+  host: "0.0.0.0"
+  port: "8080"
+
+storage:
+  type: "local"                    # 存储类型: local (未来支持 s3, oss, cos)
+  base_path: "./storage/images"    # 本地存储路径
+  base_url: "/images"              # 图片访问 URL 前缀
+
+auth:
+  enabled: false                   # 是否启用 API 鉴权
+  tokens:                          # 允许的 API Token 列表
+    - "your-secret-token-here"
+    - "another-token"
+
+image:
+  quality: 75                      # 图片压缩质量 (1-100)
+  max_size: 10485760               # 最大上传文件大小 (10MB)
+  allowed_types:                   # 允许的图片类型
+    - "image/jpeg"
+    - "image/png"
+    - "image/webp"

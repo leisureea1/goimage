@@ -1,0 +1,84 @@
+# ==================== 后端 (Go) ====================
+# 编译产物
+backend/image-hosting
+backend/*.exe
+backend/*.dll
+backend/*.so
+backend/*.dylib
+
+# 测试
+*.test
+*.out
+
+# 依赖
+backend/vendor/
+
+# 存储目录（包含上传的图片和元数据）
+backend/storage/
+
+# 本地配置（可能包含敏感信息）
+backend/config.local.yaml
+
+# ==================== 前端 (Vue) ====================
+# 依赖
+frontend/node_modules/
+
+# 构建产物
+frontend/dist/
+
+# 日志
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 环境变量
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# ==================== iOS App (Flutter) ====================
+# Flutter/Dart
+ios-app/.dart_tool/
+ios-app/.packages
+ios-app/.pub-cache/
+ios-app/.pub/
+ios-app/build/
+ios-app/.flutter-plugins
+ios-app/.flutter-plugins-dependencies
+
+# iOS
+ios-app/ios/Pods/
+ios-app/ios/Podfile.lock
+ios-app/ios/.symlinks/
+ios-app/ios/Flutter/Flutter.framework
+ios-app/ios/Flutter/Flutter.podspec
+ios-app/ios/Flutter/Generated.xcconfig
+ios-app/ios/Flutter/app.flx
+ios-app/ios/Flutter/app.zip
+ios-app/ios/Flutter/flutter_assets/
+ios-app/ios/Flutter/flutter_export_environment.sh
+ios-app/ios/ServiceDefinitions.json
+ios-app/ios/Runner/GeneratedPluginRegistrant.*
+
+# Android (如果以后添加)
+ios-app/android/.gradle/
+ios-app/android/local.properties
+ios-app/android/*.iml
+
+# ==================== IDE ====================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ==================== 系统文件 ====================
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp
+
+# ==================== 其他 ====================
+# IPA 文件
+*.ipa

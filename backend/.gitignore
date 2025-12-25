@@ -1,0 +1,26 @@
+# 编译产物
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+image-hosting
+
+# 测试
+*.test
+*.out
+
+# 依赖
+vendor/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 存储目录
+storage/
+
+# 配置文件 (包含敏感信息)
+config.local.yaml
